@@ -6,6 +6,7 @@ This package is used to start session and set session path.
 By default, server settings are referenced. If the settings are sent to the project's `__construct` method, these settings take effect.
 
 **Out-of-class use:**
+
 code:
 ```php
 require_once('Mind.php');
@@ -19,6 +20,7 @@ $m::aliyilmaz('session')->start();
 ```
 
 **When using it in the class:**
+
 code:
 ```php
 self::$conf = [ 
@@ -37,6 +39,7 @@ self::aliyilmaz('session')->start();
 It must be run before the session initialization method, it can be used as a chain.
 
 **Out-of-class use:**
+
 code:
 ```php
 require_once('Mind.php');
@@ -45,6 +48,7 @@ $m::aliyilmaz('session')->setPath('./session/')->start();
 ```
 
 **When using it in the class:**
+
 code:
 ```php
 self::aliyilmaz('session')->setPath('./session/')->start();
@@ -55,6 +59,7 @@ self::aliyilmaz('session')->setPath('./session/')->start();
 ### Creating / using session parameters
 
 **Out-of-class use:**
+
 code:
 ```php
 require_once('Mind.php');
@@ -68,6 +73,7 @@ print_r($_SESSION);
 ```
 
 **When using it in the class:**
+
 code:
 ```php
 self::aliyilmaz('session')->start();
